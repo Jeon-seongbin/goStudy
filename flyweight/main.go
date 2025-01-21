@@ -27,6 +27,10 @@ func NewUser2(fullName string) *User2 {
 			}
 		}
 		allNames = append(allNames, s)
+		fmt.Println(allNames)
+		fmt.Println(len(allNames) - 1)
+		fmt.Println("-")
+		fmt.Println(uint8(len(allNames) - 1))
 		return uint8(len(allNames) - 1)
 	}
 
@@ -34,6 +38,7 @@ func NewUser2(fullName string) *User2 {
 	parts := strings.Split(fullName, " ")
 
 	for _, p := range parts {
+		fmt.Println(result.names)
 		result.names = append(result.names, getOrAdd(p))
 	}
 	return &result
