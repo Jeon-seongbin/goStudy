@@ -59,6 +59,7 @@ func (b *BankAccountCommand) Undo() {
 func NewBankAccountCommand(account *BankAccount, action Action, amount int) *BankAccountCommand {
 	return &BankAccountCommand{account: account, action: action, amount: amount}
 }
+
 func main() {
 	ba := BankAccount{}
 	cmd := NewBankAccountCommand(&ba, Deposit, 100)

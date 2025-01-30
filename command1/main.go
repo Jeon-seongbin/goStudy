@@ -18,7 +18,7 @@ func (b *BankAccount) Withdraw(amount int) bool {
 	return false
 }
 
-// ///////////////////////////////////
+// ////////////////////////////////////
 type Command interface {
 	Call()
 	Undo()
