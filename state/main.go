@@ -58,6 +58,9 @@ func (o *OffState) On(sw *Switch) {
 func main() {
 	sw := NewSwitch()
 	fmt.Println("-")
+	sw.Off()
+	sw.Off()
+	fmt.Println("-")
 	sw.On()
 	fmt.Println("-")
 	sw.Off()
