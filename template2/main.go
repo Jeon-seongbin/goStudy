@@ -15,7 +15,6 @@ func PlayGame(
 	}
 
 	fmt.Printf("Player %d wins \n", winningPlayer())
-
 }
 
 func main() {
